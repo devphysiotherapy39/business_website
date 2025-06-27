@@ -13,51 +13,70 @@ export const HeroSection = () => {
       
       {/* Main Content */}
       <div className="container mx-auto px-4 py-20 relative z-10">
-        <div className="max-w-6xl mx-auto text-center">
-          {/* Main Heading */}
-          <div className="animate-fade-in-up">
-            <h1 className="text-5xl md:text-7xl font-bold text-primary mb-4">
-              Dev Physiotherapy
-            </h1>
-            <h2 className="text-3xl md:text-4xl font-semibold text-gray-700 mb-6">
-              & Healthcare Center
-            </h2>
-          </div>
+        <div className="max-w-7xl mx-auto">
+          {/* Main Content Grid */}
+          <div className="grid lg:grid-cols-2 gap-12 items-center mb-12">
+            {/* Text Content */}
+            <div className="text-center lg:text-left order-2 lg:order-1">
+              {/* Main Heading */}
+              <div className="animate-fade-in-up">
+                <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-primary mb-4">
+                  Dev Physiotherapy
+                </h1>
+                <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold text-gray-700 mb-6">
+                  & Healthcare Center
+                </h2>
+              </div>
 
-          {/* Tagline */}
-          <div className="animate-fade-in-up animation-delay-200">
-            <div className="flex flex-col md:flex-row items-center justify-center gap-4 mb-8">
-              <span className="px-6 py-2 bg-gradient-to-r from-green-500 to-green-600 text-white rounded-full text-lg font-medium">
-                Ayurvedic
-              </span>
-              <span className="text-2xl font-light text-gray-400">|</span>
-              <span className="px-6 py-2 bg-gradient-to-r from-red-500 to-red-600 text-white rounded-full text-lg font-medium">
-                Surgical
-              </span>
-            </div>
-          </div>
-
-          {/* Slogan */}
-          <div className="animate-fade-in-up animation-delay-400">
-            <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 mb-12 shadow-premium">
-              <div className="flex items-center justify-center gap-4 mb-4">
-                <div className="w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center animate-pulse-glow">
-                  <div className="w-8 h-8 bg-white rounded-full flex items-center justify-center">
-                    <div className="w-4 h-4 bg-primary rounded-full animate-float"></div>
-                  </div>
+              {/* Tagline */}
+              <div className="animate-fade-in-up animation-delay-200">
+                <div className="flex flex-col md:flex-row items-center justify-center lg:justify-start gap-4 mb-8">
+                  <span className="px-6 py-2 bg-gradient-to-r from-green-500 to-green-600 text-white rounded-full text-lg font-medium">
+                    Ayurvedic
+                  </span>
+                  <span className="text-2xl font-light text-gray-400 hidden md:block">|</span>
+                  <span className="px-6 py-2 bg-gradient-to-r from-red-500 to-red-600 text-white rounded-full text-lg font-medium">
+                    Surgical
+                  </span>
                 </div>
               </div>
-              <h3 className="text-3xl md:text-4xl font-bold text-primary mb-2">
-                Center for Pain & Paralysis
-              </h3>
-              <p className="text-xl md:text-2xl text-gray-600 font-medium">
-                Life is Motion — Motion is Life
-              </p>
+
+              {/* Slogan */}
+              <div className="animate-fade-in-up animation-delay-400">
+                <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 lg:p-8 mb-8 shadow-premium">
+                  <div className="flex items-center justify-center lg:justify-start gap-4 mb-4">
+                    <div className="w-12 h-12 lg:w-16 lg:h-16 bg-gradient-primary rounded-full flex items-center justify-center animate-pulse-glow">
+                      <div className="w-6 h-6 lg:w-8 lg:h-8 bg-white rounded-full flex items-center justify-center">
+                        <div className="w-3 h-3 lg:w-4 lg:h-4 bg-primary rounded-full animate-float"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-primary mb-2">
+                    Center for Pain & Paralysis
+                  </h3>
+                  <p className="text-lg md:text-xl lg:text-2xl text-gray-600 font-medium">
+                    Life is Motion — Motion is Life
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Hero Image */}
+            <div className="order-1 lg:order-2 animate-fade-in-up animation-delay-200">
+              <div className="relative">
+                <div className="absolute inset-0 bg-gradient-primary rounded-3xl blur-2xl opacity-20 animate-pulse-glow"></div>
+                <img 
+                  src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?auto=format&fit=crop&w=800&q=80"
+                  alt="Professional physiotherapy treatment"
+                  className="relative w-full h-[400px] lg:h-[500px] object-cover rounded-3xl shadow-premium"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent rounded-3xl"></div>
+              </div>
             </div>
           </div>
 
           {/* CTA Buttons */}
-          <div className="animate-fade-in-up animation-delay-600">
+          <div className="text-center animate-fade-in-up animation-delay-600">
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
               <Button 
                 size="lg" 
@@ -76,7 +95,7 @@ export const HeroSection = () => {
           </div>
 
           {/* Hours */}
-          <div className="animate-fade-in-up animation-delay-800">
+          <div className="text-center animate-fade-in-up animation-delay-800">
             <div className="bg-primary text-white rounded-xl p-6 inline-block shadow-lg">
               <h4 className="text-lg font-semibold mb-2">Consulting Hours</h4>
               <div className="text-sm space-y-1">
