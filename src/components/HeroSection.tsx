@@ -15,15 +15,15 @@ export const HeroSection = () => {
       <div className="container mx-auto px-4 py-20 relative z-10">
         <div className="max-w-7xl mx-auto">
           {/* Main Content Grid */}
-          <div className="grid lg:grid-cols-2 gap-12 items-center mb-12">
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center mb-12">
             {/* Text Content */}
             <div className="text-center lg:text-left order-2 lg:order-1">
               {/* Main Heading */}
               <div className="animate-fade-in-up">
-                <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-primary mb-4">
+                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary mb-4">
                   Dev Physiotherapy
                 </h1>
-                <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold text-gray-700 mb-6">
+                <h2 className="text-2xl md:text-3xl lg:text-3xl font-semibold text-gray-700 mb-6">
                   & Healthcare Center
                 </h2>
               </div>
@@ -43,18 +43,18 @@ export const HeroSection = () => {
 
               {/* Slogan */}
               <div className="animate-fade-in-up animation-delay-400">
-                <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 lg:p-8 mb-8 shadow-premium">
+                <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 mb-8 shadow-premium">
                   <div className="flex items-center justify-center lg:justify-start gap-4 mb-4">
-                    <div className="w-12 h-12 lg:w-16 lg:h-16 bg-gradient-primary rounded-full flex items-center justify-center animate-pulse-glow">
-                      <div className="w-6 h-6 lg:w-8 lg:h-8 bg-white rounded-full flex items-center justify-center">
-                        <div className="w-3 h-3 lg:w-4 lg:h-4 bg-primary rounded-full animate-float"></div>
+                    <div className="w-12 h-12 bg-gradient-primary rounded-full flex items-center justify-center animate-pulse-glow">
+                      <div className="w-6 h-6 bg-white rounded-full flex items-center justify-center">
+                        <div className="w-3 h-3 bg-primary rounded-full animate-float"></div>
                       </div>
                     </div>
                   </div>
-                  <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-primary mb-2">
+                  <h3 className="text-xl md:text-2xl lg:text-3xl font-bold text-primary mb-2">
                     Center for Pain & Paralysis
                   </h3>
-                  <p className="text-lg md:text-xl lg:text-2xl text-gray-600 font-medium">
+                  <p className="text-lg md:text-xl text-gray-600 font-medium">
                     Life is Motion — Motion is Life
                   </p>
                 </div>
@@ -62,15 +62,15 @@ export const HeroSection = () => {
             </div>
 
             {/* Hero Image */}
-            <div className="order-1 lg:order-2 animate-fade-in-up animation-delay-200">
-              <div className="relative">
-                <div className="absolute inset-0 bg-gradient-primary rounded-3xl blur-2xl opacity-20 animate-pulse-glow"></div>
+            <div className="order-1 lg:order-2 animate-fade-in-up animation-delay-200 flex justify-center lg:justify-end">
+              <div className="relative w-full max-w-sm lg:max-w-md">
+                <div className="absolute inset-0 bg-gradient-primary rounded-2xl blur-xl opacity-20 animate-pulse-glow"></div>
                 <img 
-                  src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?auto=format&fit=crop&w=800&q=80"
+                  src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?auto=format&fit=crop&w=600&q=80"
                   alt="Professional physiotherapy treatment"
-                  className="relative w-full h-[400px] lg:h-[500px] object-cover rounded-3xl shadow-premium"
+                  className="relative w-full h-[280px] lg:h-[350px] object-cover rounded-2xl shadow-premium"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent rounded-3xl"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent rounded-2xl"></div>
               </div>
             </div>
           </div>
