@@ -93,8 +93,7 @@ export const HeroSection = () => {
               <h4 className="text-lg font-semibold mb-2">Consulting Hours</h4>
               <div className="text-sm space-y-1">
                 <p><span className="font-medium">Monday - Saturday</span></p>
-                <p>Morning: 9:00 AM - 2:00 PM</p>
-                <p>Evening: 5:00 PM - 10:00 PM</p>
+                <p>9:00 AM - 9:00 PM</p>
               </div>
             </div>
           </div>

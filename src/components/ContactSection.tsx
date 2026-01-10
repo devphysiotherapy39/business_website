@@ -89,7 +89,7 @@ export const ContactSection = () => {
             Book Your Appointment
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
-            Take the first step towards better health. Schedule your consultation 
+            Take the first step towards better health. Schedule your consultation
             with our expert doctors today.
           </p>
           <div className="w-24 h-1 bg-gradient-primary mx-auto rounded-full"></div>
@@ -102,7 +102,7 @@ export const ContactSection = () => {
               <h3 className="text-2xl font-bold text-primary mb-6">
                 Appointment Request Form
               </h3>
-              
+
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div>
@@ -117,7 +117,7 @@ export const ContactSection = () => {
                       className="rounded-lg"
                     />
                   </div>
-                  
+
                   <div>
                     <label className="block text-sm font-medium text-gray-700 mb-2">
                       Age *
@@ -149,7 +149,7 @@ export const ContactSection = () => {
                       </SelectContent>
                     </Select>
                   </div>
-                  
+
                   <div>
                     <label className="block text-sm font-medium text-gray-700 mb-2">
                       Phone Number *
@@ -209,14 +209,14 @@ export const ContactSection = () => {
                 </div>
 
                 <div className="flex flex-col sm:flex-row gap-4">
-                  <Button 
+                  <Button
                     type="submit"
                     className="flex-1 bg-accent hover:bg-accent/90 text-white rounded-lg py-3"
                     disabled={loading}
                   >
                     {loading ? 'Submitting...' : 'Book Appointment'}
                   </Button>
-                  <Button 
+                  <Button
                     type="button"
                     variant="outline"
                     className="flex-1 border-primary text-primary hover:bg-primary hover:text-white rounded-lg py-3"
@@ -236,7 +236,7 @@ export const ContactSection = () => {
                 <h3 className="text-2xl font-bold text-primary mb-6">
                   Get In Touch
                 </h3>
-                
+
                 <div className="space-y-6">
                   <div className="flex items-center gap-4">
                     <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center">
@@ -260,8 +260,7 @@ export const ContactSection = () => {
                       <h4 className="font-semibold text-gray-900">Working Hours</h4>
                       <div className="text-sm text-gray-600">
                         <p>Monday - Saturday</p>
-                        <p>Morning: 9:00 AM - 2:00 PM</p>
-                        <p>Evening: 5:00 PM - 10:00 PM</p>
+                        <p>9:00 AM - 9:00 PM</p>
                       </div>
                     </div>
                   </div>
@@ -293,7 +292,7 @@ export const ContactSection = () => {
               <CardContent className="p-8 text-center">
                 <h3 className="text-xl font-bold mb-4">Emergency Services</h3>
                 <p className="mb-6">For urgent medical consultations and emergency home visits</p>
-                <Button 
+                <Button
                   variant="secondary"
                   className="w-full bg-white text-accent hover:bg-gray-100"
                   onClick={() => window.open('tel:9724385791')}

@@ -37,7 +37,7 @@ export const Header = () => {
             <div className="flex items-center gap-4">
               <div className="flex items-center gap-1">
                 <Clock className="w-4 h-4" />
-                <span>Mon-Sat: 9AM-2PM, 5PM-10PM</span>
+                <span>Mon-Sat: 9AM-9PM</span>
               </div>
               <div className="flex items-center gap-1">
                 <MapPin className="w-4 h-4" />

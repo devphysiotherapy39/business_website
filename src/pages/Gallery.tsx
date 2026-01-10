@@ -113,6 +113,39 @@ const Gallery = () => {
               </div>
             </div>
           </div>
+
+          {/* Educational Blog / Resources Section */}
+          <div className="mb-16">
+            <h3 className="text-2xl font-bold text-primary mb-6 text-center animate-fade-in-up">
+              Educational Blog / Resources
+            </h3>
+            <div className="columns-2 md:columns-3 gap-6">
+              {/* Educational Blog Image 1 */}
+              <div className="rounded-lg overflow-hidden shadow mb-6 break-inside-avoid">
+                <img src="/assets/educational_blogs/education_blog_1.jpeg" alt="Educational Resource 1" className="block w-full" />
+              </div>
+              {/* Educational Blog Image 2 */}
+              <div className="rounded-lg overflow-hidden shadow mb-6 break-inside-avoid">
+                <img src="/assets/educational_blogs/education_blog_2.jpeg" alt="Educational Resource 2" className="block w-full" />
+              </div>
+              {/* Educational Blog Image 3 */}
+              <div className="rounded-lg overflow-hidden shadow mb-6 break-inside-avoid">
+                <img src="/assets/educational_blogs/education_blog_3.jpeg" alt="Educational Resource 3" className="block w-full" />
+              </div>
+              {/* Educational Blog Image 4 */}
+              <div className="rounded-lg overflow-hidden shadow mb-6 break-inside-avoid">
+                <img src="/assets/educational_blogs/education_blog_4.jpeg" alt="Educational Resource 4" className="block w-full" />
+              </div>
+              {/* Educational Blog Image 5 */}
+              <div className="rounded-lg overflow-hidden shadow mb-6 break-inside-avoid">
+                <img src="/assets/educational_blogs/education_blog_5.jpeg" alt="Educational Resource 5" className="block w-full" />
+              </div>
+              {/* Educational Blog Image 6 */}
+              <div className="rounded-lg overflow-hidden shadow mb-6 break-inside-avoid">
+                <img src="/assets/educational_blogs/education_blog_6.jpeg" alt="Educational Resource 6" className="block w-full" />
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       <Footer />

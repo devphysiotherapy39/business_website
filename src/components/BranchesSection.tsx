@@ -15,7 +15,7 @@ export const BranchesSection = () => {
       mapUrl: "https://maps.google.com?q=Gotri+Branch+Dev+Physiotherapy+Vadodara"
     },
     {
-      name: "Vasna Branch", 
+      name: "Vasna Branch",
       address: "E/13, Megha Park",
       location: "Near Khodiyar Dughdhalay, Near Saint Kabir School",
       area: "Vasna Road, Vadodara - 390007",
@@ -34,7 +34,7 @@ export const BranchesSection = () => {
             Our Locations
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
-            Conveniently located branches in Vadodara to serve you better. 
+            Conveniently located branches in Vadodara to serve you better.
             Choose the location that's most convenient for you.
           </p>
           <div className="w-24 h-1 bg-gradient-primary mx-auto rounded-full"></div>
@@ -43,13 +43,12 @@ export const BranchesSection = () => {
         {/* Branches Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl mx-auto mb-12">
           {branches.map((branch, index) => (
-            <Card 
+            <Card
               key={branch.name}
-              className={`overflow-hidden shadow-premium hover:shadow-2xl transition-all duration-500 animate-fade-in-up border-0 ${
-                branch.isMain 
-                  ? 'bg-gradient-to-br from-white to-primary/5 ring-2 ring-primary/20' 
+              className={`overflow-hidden shadow-premium hover:shadow-2xl transition-all duration-500 animate-fade-in-up border-0 ${branch.isMain
+                  ? 'bg-gradient-to-br from-white to-primary/5 ring-2 ring-primary/20'
                   : 'bg-gradient-to-br from-white to-secondary/5'
-              }`}
+                }`}
               style={{ animationDelay: `${index * 200}ms` }}
             >
               <CardContent className="p-8">
@@ -79,7 +78,7 @@ export const BranchesSection = () => {
 
                     <div className="flex items-center gap-3">
                       <Phone className="w-5 h-5 text-primary" />
-                      <a 
+                      <a
                         href={`tel:${branch.phone}`}
                         className="text-primary font-semibold hover:underline transition-colors"
                       >
@@ -91,22 +90,21 @@ export const BranchesSection = () => {
                       <Clock className="w-5 h-5 text-primary mt-1" />
                       <div className="text-sm text-gray-600">
                         <p className="font-medium">Mon - Sat</p>
-                        <p>Morning: 9:00 AM - 2:00 PM</p>
-                        <p>Evening: 5:00 PM - 10:00 PM</p>
+                        <p>9:00 AM - 9:00 PM</p>
                       </div>
                     </div>
                   </div>
 
                   {/* Actions */}
                   <div className="flex flex-col sm:flex-row gap-3">
-                    <Button 
+                    <Button
                       className="flex-1 bg-primary hover:bg-primary/90 text-white rounded-full"
                       onClick={() => window.open(`tel:${branch.phone}`)}
                     >
                       <Phone className="w-4 h-4 mr-2" />
                       Call Now
                     </Button>
-                    <Button 
+                    <Button
                       variant="outline"
                       className="flex-1 border-primary text-primary hover:bg-primary hover:text-white rounded-full"
                       onClick={() => window.open(branch.mapUrl, '_blank')}
@@ -128,21 +126,21 @@ export const BranchesSection = () => {
               Multiple Contact Numbers
             </h3>
             <div className="flex flex-col sm:flex-row justify-center items-center gap-4 mb-6">
-              <a 
+              <a
                 href="tel:9724385791"
                 className="flex items-center gap-2 px-6 py-3 bg-primary text-white rounded-full hover:bg-primary/90 transition-colors font-semibold"
               >
                 <Phone className="w-4 h-4" />
                 97243 85791
               </a>
-              <a 
+              <a
                 href="tel:9428561294"
                 className="flex items-center gap-2 px-6 py-3 bg-secondary text-white rounded-full hover:bg-secondary/90 transition-colors font-semibold"
               >
                 <Phone className="w-4 h-4" />
                 94285 61294
               </a>
-              <a 
+              <a
                 href="tel:8487094533"
                 className="flex items-center gap-2 px-6 py-3 bg-accent text-white rounded-full hover:bg-accent/90 transition-colors font-semibold"
               >
