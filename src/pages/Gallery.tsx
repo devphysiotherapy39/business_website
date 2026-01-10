@@ -59,10 +59,12 @@ const Gallery = () => {
               <div className="aspect-w-16 aspect-h-9 bg-gray-100 rounded-lg overflow-hidden shadow-lg">
                 <img src="/recovery%201.jpg" alt="Patient Recovery 1" className="w-full h-full object-cover" />
               </div>
+
               {/* Recovery Image 2 */}
               <div className="aspect-w-16 aspect-h-9 bg-gray-100 rounded-lg overflow-hidden shadow-lg">
                 <img src="/recovery%202.jpg" alt="Patient Recovery 2" className="w-full h-full object-cover" />
               </div>
+
               {/* Recovery Image 3 */}
               <div className="aspect-w-16 aspect-h-9 bg-gray-100 rounded-lg overflow-hidden shadow-lg">
                 <img src="/recovery%203.jpg" alt="Patient Recovery 3" className="w-full h-full object-cover" />
@@ -91,23 +93,23 @@ const Gallery = () => {
             </div>
           </div>
 
-          {/* Images Section */}
+          {/* Surgical Images Section */}
           <div className="mb-16">
             <h3 className="text-2xl font-bold text-primary mb-6 text-center animate-fade-in-up">
               Surgical Images
             </h3>
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6 mx-auto">
-              {/* Clinic Image 2 */}
+              {/* Surgical Image 2 */}
               <div className="aspect-w-16 aspect-h-9 bg-gray-100 rounded-lg overflow-hidden shadow">
-                <img src="/assets/surgical/adult_diapers.jpeg" alt="Clinic 2" className="w-full h-full object-cover" />
+                <img src="/assets/surgical/adult_diapers.jpeg" alt="Surgical 2" className="w-full h-full object-cover" />
               </div>
-              {/* Clinic Image 3 */}
+              {/* Surgical Image 3 */}
               <div className="aspect-w-16 aspect-h-9 bg-gray-100 rounded-lg overflow-hidden shadow">
-                <img src="/assets/surgical/knee_caps.jpeg" alt="Clinic 3" className="w-full h-full object-cover" />
+                <img src="/assets/surgical/knee_caps.jpeg" alt="Surgical 3" className="w-full h-full object-cover" />
               </div>
-              {/* Clinic Image 4 */}
+              {/* Surgical Image 4 */}
               <div className="aspect-w-16 aspect-h-9 bg-gray-100 rounded-lg overflow-hidden shadow">
-                <img src="/assets/surgical/rent_services.jpeg" alt="Clinic 4" className="w-full h-full object-cover" />
+                <img src="/assets/surgical/rent_services.jpeg" alt="Surgical 4" className="w-full h-full object-cover" />
               </div>
             </div>
           </div>
