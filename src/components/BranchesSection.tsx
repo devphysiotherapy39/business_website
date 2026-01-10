@@ -91,8 +91,8 @@ export const BranchesSection = () => {
                       <Clock className="w-5 h-5 text-primary mt-1" />
                       <div className="text-sm text-gray-600">
                         <p className="font-medium">Mon - Sat</p>
-                        <p>Morning: 9:00 AM - 1:00 PM</p>
-                        <p>Evening: 4:00 PM - 8:00 PM</p>
+                        <p>Morning: 9:00 AM - 2:00 PM</p>
+                        <p>Evening: 5:00 PM - 10:00 PM</p>
                       </div>
                     </div>
                   </div>

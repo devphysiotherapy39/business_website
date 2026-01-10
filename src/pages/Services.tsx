@@ -1,9 +1,9 @@
-
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Services = () => {
   const [activeTab, setActiveTab] = useState('physiotherapy');
@@ -186,10 +186,11 @@ const Services = () => {
 
           <div className="text-center animate-fade-in-up animation-delay-400">
             <Button 
+              asChild
               size="lg"
               className="bg-accent hover:bg-accent/90 text-white px-8 py-3 rounded-full font-semibold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300"
             >
-              Book Consultation
+              <Link to="/contact">Book Consultation</Link>
             </Button>
           </div>
         </div>

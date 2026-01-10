@@ -1,13 +1,14 @@
-
 import { useState } from 'react';
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { Phone, Mail, MapPin, Clock } from "lucide-react";
+import { Phone, MapPin, Clock } from "lucide-react";
+import { useToast } from "@/hooks/use-toast";
 
 export const ContactSection = () => {
+  const { toast } = useToast();
   const [formData, setFormData] = useState({
     name: '',
     age: '',
@@ -17,12 +18,62 @@ export const ContactSection = () => {
     message: '',
     serviceType: ''
   });
+  const [loading, setLoading] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission
-    console.log('Form submitted:', formData);
-    alert('Appointment request submitted! We will contact you soon.');
+    setLoading(true);
+    try {
+      const data = new FormData();
+      data.append('access_key', '0ff9225a-f529-44a6-9309-bd1ed425e83c');
+      data.append('name', formData.name);
+      data.append('age', formData.age);
+      data.append('gender', formData.gender);
+      data.append('phone', formData.phone);
+      data.append('condition', formData.condition);
+      data.append('message', formData.message);
+      data.append('serviceType', formData.serviceType);
+
+      const object = Object.fromEntries(data);
+      const json = JSON.stringify(object);
+
+      const res = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json"
+        },
+        body: json
+      }).then((res) => res.json());
+
+      if (res.success) {
+        toast({
+          title: "Appointment request submitted!",
+          description: "We will contact you soon.",
+        });
+        setFormData({
+          name: '',
+          age: '',
+          gender: '',
+          phone: '',
+          condition: '',
+          message: '',
+          serviceType: ''
+        });
+      } else {
+        toast({
+          title: "Submission failed",
+          description: res.message || "Something went wrong. Please try again.",
+        });
+      }
+    } catch (error) {
+      toast({
+        title: "Submission failed",
+        description: "Something went wrong. Please try again.",
+      });
+    } finally {
+      setLoading(false);
+    }
   };
 
   const handleInputChange = (field: string, value: string) => {
@@ -161,8 +212,9 @@ export const ContactSection = () => {
                   <Button 
                     type="submit"
                     className="flex-1 bg-accent hover:bg-accent/90 text-white rounded-lg py-3"
+                    disabled={loading}
                   >
-                    Book Appointment
+                    {loading ? 'Submitting...' : 'Book Appointment'}
                   </Button>
                   <Button 
                     type="button"
@@ -208,8 +260,8 @@ export const ContactSection = () => {
                       <h4 className="font-semibold text-gray-900">Working Hours</h4>
                       <div className="text-sm text-gray-600">
                         <p>Monday - Saturday</p>
-                        <p>Morning: 9:00 AM - 1:00 PM</p>
-                        <p>Evening: 4:00 PM - 8:00 PM</p>
+                        <p>Morning: 9:00 AM - 2:00 PM</p>
+                        <p>Evening: 5:00 PM - 10:00 PM</p>
                       </div>
                     </div>
                   </div>

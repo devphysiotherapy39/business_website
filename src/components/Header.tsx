@@ -1,8 +1,8 @@
-
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Phone, Menu, X, Clock, MapPin } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
+import { NotificationSection } from "@/components/NotificationSection";
 
 export const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -22,6 +22,7 @@ export const Header = () => {
     { name: 'Home', href: '/' },
     { name: 'About', href: '/about' },
     { name: 'Services', href: '/services' },
+    { name: 'Gallery', href: '/gallery' },   // <-- Add this line
     { name: 'Contact', href: '/contact' },
   ];
 
@@ -36,7 +37,7 @@ export const Header = () => {
             <div className="flex items-center gap-4">
               <div className="flex items-center gap-1">
                 <Clock className="w-4 h-4" />
-                <span>Mon-Sat: 9AM-1PM, 4PM-8PM</span>
+                <span>Mon-Sat: 9AM-2PM, 5PM-10PM</span>
               </div>
               <div className="flex items-center gap-1">
                 <MapPin className="w-4 h-4" />
@@ -54,16 +55,18 @@ export const Header = () => {
       </div>
 
       {/* Main Header */}
-      <header className={`sticky top-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'glass-effect shadow-lg' : 'bg-white/95'
-      }`}>
+      <header className={`sticky top-0 z-50 transition-all duration-300 ${isScrolled ? 'glass-effect shadow-lg' : 'bg-white/95'
+        }`}>
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             {/* Logo */}
             <Link to="/" className="flex items-center space-x-3">
-              <div className="w-12 h-12 bg-gradient-primary rounded-full flex items-center justify-center text-white font-bold text-xl">
-                D
-              </div>
+              <img
+                src="/logo.jpg"
+                alt="Dev Physiotherapy Logo"
+                className="w-12 h-12 rounded-full object-cover border-2 border-primary shadow"
+                draggable={false}
+              />
               <div>
                 <h1 className="text-xl font-bold text-primary">Dev Physiotherapy</h1>
                 <p className="text-sm text-gray-600">& Healthcare Center</p>
@@ -76,9 +79,8 @@ export const Header = () => {
                 <Link
                   key={item.name}
                   to={item.href}
-                  className={`text-sm font-medium transition-colors hover:text-primary ${
-                    isActive(item.href) ? 'text-primary border-b-2 border-primary pb-1' : 'text-gray-700'
-                  }`}
+                  className={`text-sm font-medium transition-colors hover:text-primary ${isActive(item.href) ? 'text-primary border-b-2 border-primary pb-1' : 'text-gray-700'
+                    }`}
                 >
                   {item.name}
                 </Link>
@@ -87,18 +89,20 @@ export const Header = () => {
 
             {/* CTA Buttons */}
             <div className="hidden md:flex items-center space-x-3">
-              <Button 
-                variant="outline" 
+              <Button
+                asChild
+                variant="outline"
                 size="sm"
                 className="border-primary text-primary hover:bg-primary hover:text-white"
               >
-                Home Visit Available
+                <Link to="/contact">Home Visit Available</Link>
               </Button>
-              <Button 
+              <Button
+                asChild
                 size="sm"
                 className="bg-accent hover:bg-accent/90 text-white"
               >
-                Book Appointment
+                <Link to="/contact">Book Appointment</Link>
               </Button>
             </div>
 
@@ -121,21 +125,22 @@ export const Header = () => {
                   key={item.name}
                   to={item.href}
                   onClick={() => setIsMobileMenuOpen(false)}
-                  className={`block py-2 text-base font-medium transition-colors ${
-                    isActive(item.href) ? 'text-primary' : 'text-gray-700 hover:text-primary'
-                  }`}
+                  className={`block py-2 text-base font-medium transition-colors ${isActive(item.href) ? 'text-primary' : 'text-gray-700 hover:text-primary'
+                    }`}
                 >
                   {item.name}
                 </Link>
               ))}
               <div className="pt-4 space-y-2">
-                <Button 
-                  variant="outline" 
-                  className="w-full border-primary text-primary hover:bg-primary hover:text-white"
+                <Button
+                  asChild
+                  variant="outline"
+                  size="sm"
+                  className="border-primary text-primary hover:bg-primary hover:text-white"
                 >
-                  Home Visit Available
+                  <Link to="/contact">Home Visit Available</Link>
                 </Button>
-                <Button 
+                <Button
                   className="w-full bg-accent hover:bg-accent/90 text-white"
                 >
                   Book Appointment
@@ -145,6 +150,7 @@ export const Header = () => {
           </div>
         )}
       </header>
+      <NotificationSection />
     </>
   );
 };

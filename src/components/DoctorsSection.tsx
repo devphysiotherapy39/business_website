@@ -1,4 +1,3 @@
-
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Phone, Award, GraduationCap } from "lucide-react";
@@ -19,15 +18,18 @@ export const DoctorsSection = () => {
           <div className="w-24 h-1 bg-gradient-primary mx-auto rounded-full"></div>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
+        {/* Doctor Cards: always vertical */}
+        <div className="grid grid-cols-1 gap-12 max-w-6xl mx-auto">
           {/* Dr. Hitesh D. Prajapati */}
           <Card className="overflow-hidden shadow-premium hover:shadow-2xl transition-all duration-500 animate-fade-in-up border-0 bg-gradient-to-br from-white to-blue-50/30">
             <CardContent className="p-8">
               <div className="flex flex-col items-center text-center">
-                {/* Profile Image Placeholder */}
-                <div className="w-32 h-32 bg-gradient-primary rounded-full flex items-center justify-center text-white text-4xl font-bold mb-6 shadow-lg">
-                  HD
-                </div>
+                {/* Profile Image */}
+                <img
+                  src="/hd.jpg"
+                  alt="Dr. Hitesh D. Prajapati"
+                  className="w-32 h-32 object-cover bg-gradient-primary rounded-full flex items-center justify-center text-white text-4xl font-bold mb-6 shadow-lg"
+                />
                 
                 <h3 className="text-2xl font-bold text-primary mb-2">
                   Dr. Hitesh D. Prajapati
@@ -48,14 +50,27 @@ export const DoctorsSection = () => {
                   </div>
                 </div>
 
-                <div className="bg-white rounded-lg p-4 w-full mb-6 shadow-soft">
-                  <h4 className="font-semibold text-primary mb-2">Qualifications:</h4>
-                  <div className="text-sm text-gray-600 space-y-1">
-                    <p>• MPT (Neuro), BPT, MIAP, MIAFT</p>
-                    <p>• YTTC, NIBS Certified</p>
-                    <p>• Chiropractic Specialist</p>
-                    <p>• Acupressure & Acupuncture</p>
-                  </div>
+                <div className="bg-white rounded-lg p-4 w-full mb-6 shadow-soft text-left">
+                  <h4 className="font-semibold text-primary mb-2">Brief Introduction:</h4>
+                  <ul className="text-sm text-gray-600 space-y-1 list-disc pl-5">
+                    <li>Graduated in Bachelor of Physiotherapy from Maharaja Sayajirao University in 2011.</li>
+                    <li>Completed 6 months Yoga teacher training course from MSU in 2013.</li>
+                    <li>Postgraduate: Master of Physiotherapy in Neurological & Psychosomatic Disorders from Rajiv Gandhi University of Health Science, Bangalore in 2017.</li>
+                  </ul>
+                </div>
+
+                <div className="bg-white rounded-lg p-4 w-full mb-6 shadow-soft text-left">
+                  <h4 className="font-semibold text-primary mb-2">Seminars & Workshops:</h4>
+                  <ul className="text-sm text-gray-600 space-y-1 list-decimal pl-5">
+                    <li>5-day Seminar Cum Workshop on Non-invasive Brain Stimulation, Dry needle based Brain stimulation and Neuromuscular Brain Mapping by Advance Institute of Neurosciences, Hyderabad, 2021.</li>
+                    <li>Workshop of Aerobics Instructor Training + Fitness-Diet and Nutrition by Indian Academy of Fitness Training, Mangalore, 2012.</li>
+                    <li>Participated in CME On Neuro Regenerative Rehabilitation Therapy (NRRT) by Neurogen Brain & Spine Institute, 2012.</li>
+                    <li>Seminar on WOMEN'S HEALTH-A PSYCHOPHYSICAL APPROACH by Indian Association of Physiotherapists (IAP), 2012.</li>
+                    <li>Workshop on Comprehensive Approach in Low Back pain and Shoulder pain syndromes by IAP, 2011.</li>
+                    <li>Seminar on Myofascial release and Muscle energy techniques at SSGH by IAP, 2010.</li>
+                    <li>Seminar on Current Concepts in Musculoskeletal & Sports physiotherapy at SSGH by IAP, 2009.</li>
+                    <li>Seminar on Integrative Manual therapy utilising strain counter Strain technique at SSGH by IAP, 2011.</li>
+                  </ul>
                 </div>
 
                 <div className="flex items-center gap-2 text-primary font-semibold mb-4">
@@ -77,10 +92,12 @@ export const DoctorsSection = () => {
           <Card className="overflow-hidden shadow-premium hover:shadow-2xl transition-all duration-500 animate-fade-in-up animation-delay-200 border-0 bg-gradient-to-br from-white to-orange-50/30">
             <CardContent className="p-8">
               <div className="flex flex-col items-center text-center">
-                {/* Profile Image Placeholder */}
-                <div className="w-32 h-32 bg-gradient-to-r from-orange-500 to-orange-600 rounded-full flex items-center justify-center text-white text-4xl font-bold mb-6 shadow-lg">
-                  BH
-                </div>
+                {/* Profile Image */}
+                <img
+                  src="/bh.jpg"
+                  alt="Dr. Bhumika H. Prajapati"
+                  className="w-32 h-32 object-cover bg-gradient-to-r from-orange-500 to-orange-600 rounded-full flex items-center justify-center text-white text-4xl font-bold mb-6 shadow-lg"
+                />
                 
                 <h3 className="text-2xl font-bold text-primary mb-2">
                   Dr. Bhumika H. Prajapati
@@ -101,14 +118,20 @@ export const DoctorsSection = () => {
                   </div>
                 </div>
 
-                <div className="bg-white rounded-lg p-4 w-full mb-6 shadow-soft">
-                  <h4 className="font-semibold text-primary mb-2">Specializations:</h4>
-                  <div className="text-sm text-gray-600 space-y-1">
-                    <p>• Traditional Ayurvedic Medicine</p>
-                    <p>• Chronic Disease Management</p>
-                    <p>• Women's Health & Wellness</p>
-                    <p>• Panchakarma Therapy</p>
-                  </div>
+                <div className="bg-white rounded-lg p-4 w-full mb-6 shadow-soft text-left">
+                  <h4 className="font-semibold text-primary mb-2">Brief Introduction:</h4>
+                  <ul className="text-sm text-gray-600 space-y-1 list-disc pl-5">
+                    <li>Graduated Bachelor of Ayurvedic Medicine & Surgery from Gujarat Ayurved University, J. S. Ayurved Mahavidyalaya, Nadiad, Gujarat in 2011.</li>
+                  </ul>
+                </div>
+
+                <div className="bg-white rounded-lg p-4 w-full mb-6 shadow-soft text-left">
+                  <h4 className="font-semibold text-primary mb-2">Certifications & Trainings:</h4>
+                  <ul className="text-sm text-gray-600 space-y-1 list-decimal pl-5">
+                    <li>Participated in District Hospital Physicians Training (DHPT) Program at GVK Emergency Management and Research Institute Ahmedabad by Stanford School of Medicine USA, 2017.</li>
+                    <li>Certification course in Diabetes Education Academy (DMDEA) & IADE, June 2014-March 2015.</li>
+                    <li>Training course on Integrated Management of Neonatal and Childhood Illnesses by NHM, 2015.</li>
+                  </ul>
                 </div>
 
                 <div className="flex items-center gap-2 text-primary font-semibold mb-4">

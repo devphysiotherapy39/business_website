@@ -14,7 +14,7 @@ const About = () => {
     },
     {
       icon: <Users className="w-8 h-8" />,
-      title: "500+ Happy Patients",
+      title: "1000+ Happy Patients",
       description: "Successfully treated patients across Vadodara and surrounding areas"
     },
     {
@@ -25,7 +25,7 @@ const About = () => {
     {
       icon: <Target className="w-8 h-8" />,
       title: "High Success Rate",
-      description: "95% patient satisfaction and successful recovery outcomes"
+      description: "99% patient satisfaction and successful recovery outcomes"
     }
   ];
 

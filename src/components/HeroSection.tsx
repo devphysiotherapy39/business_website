@@ -1,18 +1,28 @@
-
 import { Button } from "@/components/ui/button";
 import { ArrowDown } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export const HeroSection = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      {/* Background Video */}
+      <video
+        className="absolute inset-0 w-full h-full object-cover z-0"
+        src="/background.mp4"
+        autoPlay
+        loop
+        muted
+        playsInline
+      />
+
       {/* Background Pattern */}
-      <div className="absolute inset-0 medical-pattern opacity-5"></div>
+      <div className="absolute inset-0 medical-pattern opacity-5 z-10"></div>
       
       {/* Background Gradient */}
-      <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-secondary/5"></div>
+      <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-secondary/5 z-10"></div>
       
       {/* Main Content */}
-      <div className="container mx-auto px-4 py-20 relative z-10">
+      <div className="container mx-auto px-4 py-20 relative z-20">
         <div className="max-w-6xl mx-auto text-center">
           {/* Main Heading */}
           <div className="animate-fade-in-up">
@@ -60,17 +70,19 @@ export const HeroSection = () => {
           <div className="animate-fade-in-up animation-delay-600">
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
               <Button 
+                asChild
                 size="lg" 
                 className="bg-accent hover:bg-accent/90 text-white px-8 py-4 text-lg font-semibold rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300"
               >
-                Take Prior Appointment
+                <Link to="/contact">Take Prior Appointment</Link>
               </Button>
               <Button 
+                asChild
                 size="lg" 
                 variant="outline"
                 className="border-2 border-primary text-primary hover:bg-primary hover:text-white px-8 py-4 text-lg font-semibold rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300"
               >
-                Home Visit Available
+                <Link to="/contact">Home Visit Available</Link>
               </Button>
             </div>
           </div>
@@ -81,23 +93,23 @@ export const HeroSection = () => {
               <h4 className="text-lg font-semibold mb-2">Consulting Hours</h4>
               <div className="text-sm space-y-1">
                 <p><span className="font-medium">Monday - Saturday</span></p>
-                <p>Morning: 9:00 AM - 1:00 PM</p>
-                <p>Evening: 4:00 PM - 8:00 PM</p>
+                <p>Morning: 9:00 AM - 2:00 PM</p>
+                <p>Evening: 5:00 PM - 10:00 PM</p>
               </div>
             </div>
           </div>
 
           {/* Scroll Indicator */}
-          <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+          <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce z-30">
             <ArrowDown className="w-6 h-6 text-primary" />
           </div>
         </div>
       </div>
 
       {/* Floating Elements */}
-      <div className="absolute top-20 left-10 w-20 h-20 bg-secondary/20 rounded-full animate-float"></div>
-      <div className="absolute top-40 right-20 w-12 h-12 bg-accent/20 rounded-full animate-float animation-delay-400"></div>
-      <div className="absolute bottom-32 left-20 w-16 h-16 bg-primary/20 rounded-full animate-float animation-delay-200"></div>
+      <div className="absolute top-20 left-10 w-20 h-20 bg-secondary/20 rounded-full animate-float z-20"></div>
+      <div className="absolute top-40 right-20 w-12 h-12 bg-accent/20 rounded-full animate-float animation-delay-400 z-20"></div>
+      <div className="absolute bottom-32 left-20 w-16 h-16 bg-primary/20 rounded-full animate-float animation-delay-200 z-20"></div>
     </section>
   );
 };
