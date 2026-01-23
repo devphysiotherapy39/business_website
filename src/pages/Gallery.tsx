@@ -61,9 +61,9 @@ const Gallery = () => {
               </div>
 
               {/* Recovery Image 2 */}
-              <div className="aspect-w-16 aspect-h-9 bg-gray-100 rounded-lg overflow-hidden shadow-lg">
+              {/* <div className="aspect-w-16 aspect-h-9 bg-gray-100 rounded-lg overflow-hidden shadow-lg">
                 <img src="/recovery%202.jpg" alt="Patient Recovery 2" className="w-full h-full object-cover" />
-              </div>
+              </div> */}
 
               {/* Recovery Image 3 */}
               <div className="aspect-w-16 aspect-h-9 bg-gray-100 rounded-lg overflow-hidden shadow-lg">
@@ -89,27 +89,6 @@ const Gallery = () => {
               {/* Clinic Image 4 */}
               <div className="aspect-w-16 aspect-h-9 bg-gray-100 rounded-lg overflow-hidden shadow">
                 <img src="/clinic%204.jpg" alt="Clinic 4" className="w-full h-full object-cover" />
-              </div>
-            </div>
-          </div>
-
-          {/* Surgical Images Section */}
-          <div className="mb-16">
-            <h3 className="text-2xl font-bold text-primary mb-6 text-center animate-fade-in-up">
-              Surgical Images
-            </h3>
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6 mx-auto">
-              {/* Surgical Image 2 */}
-              <div className="aspect-w-16 aspect-h-9 bg-gray-100 rounded-lg overflow-hidden shadow">
-                <img src="/assets/surgical/adult_diapers.jpeg" alt="Surgical 2" className="w-full h-full object-cover" />
-              </div>
-              {/* Surgical Image 3 */}
-              <div className="aspect-w-16 aspect-h-9 bg-gray-100 rounded-lg overflow-hidden shadow">
-                <img src="/assets/surgical/knee_caps.jpeg" alt="Surgical 3" className="w-full h-full object-cover" />
-              </div>
-              {/* Surgical Image 4 */}
-              <div className="aspect-w-16 aspect-h-9 bg-gray-100 rounded-lg overflow-hidden shadow">
-                <img src="/assets/surgical/rent_services.jpeg" alt="Surgical 4" className="w-full h-full object-cover" />
               </div>
             </div>
           </div>
@@ -143,6 +122,28 @@ const Gallery = () => {
               {/* Educational Blog Image 6 */}
               <div className="rounded-lg overflow-hidden shadow mb-6 break-inside-avoid">
                 <img src="/assets/educational_blogs/education_blog_6.jpeg" alt="Educational Resource 6" className="block w-full" />
+              </div>
+            </div>
+          </div>
+
+
+          {/* Surgical Images Section */}
+          <div className="mb-16">
+            <h3 className="text-2xl font-bold text-primary mb-6 text-center animate-fade-in-up">
+              Surgical Images
+            </h3>
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6 mx-auto">
+              {/* Surgical Image 2 */}
+              <div className="aspect-w-16 aspect-h-9 bg-gray-100 rounded-lg overflow-hidden shadow">
+                <img src="/assets/surgical/adult_diapers.jpeg" alt="Surgical 2" className="w-full h-full object-cover" />
+              </div>
+              {/* Surgical Image 3 */}
+              <div className="aspect-w-16 aspect-h-9 bg-gray-100 rounded-lg overflow-hidden shadow">
+                <img src="/assets/surgical/knee_caps.jpeg" alt="Surgical 3" className="w-full h-full object-cover" />
+              </div>
+              {/* Surgical Image 4 */}
+              <div className="aspect-w-16 aspect-h-9 bg-gray-100 rounded-lg overflow-hidden shadow">
+                <img src="/assets/surgical/rent_services.jpeg" alt="Surgical 4" className="w-full h-full object-cover" />
               </div>
             </div>
           </div>

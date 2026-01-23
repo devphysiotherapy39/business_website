@@ -17,7 +17,7 @@ const Services = () => {
     {
       title: "Electrotherapy",
       description: "Advanced electrical stimulation techniques for pain management and muscle rehabilitation",
-      features: ["TENS therapy", "Ultrasound treatment", "IFT application", "SWD therapy"]
+      features: ["TENS therapy", "Ultrasound treatment", "IFT application", "SWD therapy", "Spine Traction", "Wax Bath", "IG/SF-Muscle and Nerve Stimulation", "Slimming Machine Therapy for Weight Loss"]
     },
     {
       title: "Exercise Therapy",
@@ -38,6 +38,11 @@ const Services = () => {
       title: "Sports Physiotherapy",
       description: "Comprehensive care for sports injuries and performance enhancement",
       features: ["Injury prevention", "Performance optimization", "Return to sport programs", "Biomechanical analysis"]
+    },
+    {
+      title: "Other Services",
+      description: "Other services offered by the clinic",
+      features: ["Geriatric Physiotherapy", "Paediatric Physiotherapy", "MFR- Myofascial Release", "Acupressure", "Acupuncture", "Sensory Stimulation", "Shock wave Therapy", "Mackenzie/Pilates", "Neurodevelopmental Therapy", "PNF-Proprioceptive Neuromuscular Facilitation", "Aerobics", "Yoga"]
     }
   ];
 
@@ -86,7 +91,7 @@ const Services = () => {
   return (
     <div className="min-h-screen">
       <Header />
-      
+
       {/* Hero Section */}
       <section className="section-padding bg-gradient-to-br from-primary/10 to-secondary/10">
         <div className="container mx-auto px-4">
@@ -95,7 +100,7 @@ const Services = () => {
               Our Services
             </h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Comprehensive healthcare solutions combining modern medical techniques 
+              Comprehensive healthcare solutions combining modern medical techniques
               with traditional healing practices
             </p>
           </div>
@@ -106,35 +111,34 @@ const Services = () => {
       <section className="section-padding bg-white">
         <div className="container mx-auto px-4">
           {/* Tab Navigation */}
-          <div className="flex flex-col sm:flex-row justify-center mb-12 animate-fade-in-up">
-            <div className="bg-gray-100 rounded-full p-1 inline-flex">
+          <div className="flex justify-center mb-12 animate-fade-in-up px-4">
+            <div className="bg-gray-100 rounded-2xl sm:rounded-full p-1.5 flex flex-col sm:flex-row w-full max-w-md sm:max-w-max">
               <button
                 onClick={() => setActiveTab('physiotherapy')}
-                className={`px-8 py-3 rounded-full font-semibold transition-all duration-300 ${
-                  activeTab === 'physiotherapy'
+                className={`px-6 py-3 sm:px-8 rounded-xl sm:rounded-full font-semibold transition-all duration-300 text-sm sm:text-base ${activeTab === 'physiotherapy'
                     ? 'bg-primary text-white shadow-lg'
                     : 'text-primary hover:bg-primary/10'
-                }`}
+                  }`}
               >
                 Physiotherapy Services
               </button>
               <button
                 onClick={() => setActiveTab('ayurvedic')}
-                className={`px-8 py-3 rounded-full font-semibold transition-all duration-300 ${
-                  activeTab === 'ayurvedic'
-                    ? 'bg-secondary text-white shadow-lg'
-                    : 'text-secondary hover:bg-secondary/10'
-                }`}
+                className={`px-6 py-3 sm:px-8 rounded-xl sm:rounded-full font-semibold transition-all duration-300 text-sm sm:text-base mt-1 sm:mt-0 ${activeTab === 'ayurvedic'
+                    ? 'bg-primary text-white shadow-lg'
+                    : 'text-primary hover:bg-primary/10'
+                  }`}
               >
                 Ayurvedic Services
               </button>
             </div>
           </div>
 
+
           {/* Services Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
             {currentServices.map((service, index) => (
-              <Card 
+              <Card
                 key={service.title}
                 className="shadow-soft hover:shadow-premium transition-all duration-300 animate-fade-in-up border-0 group"
                 style={{ animationDelay: `${index * 100}ms` }}
@@ -175,7 +179,7 @@ const Services = () => {
 
           <div className="flex flex-wrap justify-center gap-3 mb-12 animate-fade-in-up animation-delay-200">
             {conditions.map((condition, index) => (
-              <span 
+              <span
                 key={condition}
                 className="px-4 py-2 bg-white text-primary rounded-full text-sm font-medium shadow-soft hover:shadow-lg hover:scale-105 transition-all duration-300 cursor-default border border-primary/20"
               >
@@ -185,7 +189,7 @@ const Services = () => {
           </div>
 
           <div className="text-center animate-fade-in-up animation-delay-400">
-            <Button 
+            <Button
               asChild
               size="lg"
               className="bg-accent hover:bg-accent/90 text-white px-8 py-3 rounded-full font-semibold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300"
