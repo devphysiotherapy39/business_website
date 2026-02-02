@@ -260,7 +260,7 @@ export const ContactSection = () => {
                       <h4 className="font-semibold text-gray-900">Working Hours</h4>
                       <div className="text-sm text-gray-600">
                         <p>Monday - Saturday</p>
-                        <p>9:00 AM - 9:00 PM</p>
+                        <p>8:00 AM - 9:00 PM</p>
                       </div>
                     </div>
                   </div>
