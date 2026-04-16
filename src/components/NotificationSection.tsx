@@ -9,9 +9,9 @@ export const NotificationSection = () => {
             </span>
             <div className="overflow-hidden flex-1">
                 <span className="block whitespace-nowrap animate-marquee text-white font-medium text-base md:text-lg">
-                    We are committed to giving high quality care at affordable levels to those in need of PHYSIOTHERAPY SERVICES
+                    Dev Physiotherapy & Healthcare Center - Vadodara | Brain & Spine Specialist | Chiropractor on
                     <a
-                        href="https://posts.gle/WQksdd"
+                        href="https://share.google/4cLBFAYDICHhcs9QJ"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="ml-4 underline text-yellow-200 hover:text-yellow-300 transition-colors"

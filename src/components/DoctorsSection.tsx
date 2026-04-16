@@ -9,7 +9,7 @@ export const DoctorsSection = () => {
                   {/* Doctor Banner Image */}
 <div className="w-full max-w-6xl mx-auto mb-12">
   <img
-    src="/assets/services/Poster.jpeg"
+    src="/assets/services/Poster2.jpeg"
     alt="Clinic Doctors"
     className="
       w-full
@@ -41,9 +41,9 @@ export const DoctorsSection = () => {
               <div className="flex flex-col items-center text-center">
                 {/* Profile Image */}
                 <img
-                  src="/hd2.jpeg"
+                  src="/drhiteshprajapati.jpeg"
                   alt="Dr. Hitesh D. Prajapati"
-                  className="w-32 h-32 object-cover bg-gradient-primary rounded-full flex items-center justify-center text-white text-4xl font-bold mb-6 shadow-lg"
+                  className="w-32 h-32 object-cover object-top bg-gradient-primary rounded-full flex items-center justify-center text-white text-4xl font-bold mb-6 shadow-lg"
                 />
 
                 <h3 className="text-2xl font-bold text-primary mb-2">
@@ -120,9 +120,9 @@ export const DoctorsSection = () => {
               <div className="flex flex-col items-center text-center">
                 {/* Profile Image */}
                 <img
-                  src="/bh.jpg"
+                  src="/DrBhumikaprajapati.jpeg"
                   alt="Dr. Bhumika H. Prajapati"
-                  className="w-32 h-32 object-cover bg-gradient-to-r from-orange-500 to-orange-600 rounded-full flex items-center justify-center text-white text-4xl font-bold mb-6 shadow-lg"
+                  className="w-32 h-32 object-cover object-top bg-gradient-to-r from-orange-500 to-orange-600 rounded-full flex items-center justify-center text-white text-4xl font-bold mb-6 shadow-lg"
                 />
 
                 <h3 className="text-2xl font-bold text-primary mb-2">
