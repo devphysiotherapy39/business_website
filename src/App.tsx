@@ -11,6 +11,7 @@ import Services from "./pages/Services";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 import { FloatingWhatsAppButton } from "./components/FloatingWhatsAppButton";
+import OurTeam from "./pages/OurTeam";
 
 const queryClient = new QueryClient();
 
@@ -27,6 +28,7 @@ const App = () => (
             <Route path="/services" element={<Services />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/gallery" element={<Gallery />} />
+            <Route path="/our-team" element={<OurTeam />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
           <FloatingWhatsAppButton />
