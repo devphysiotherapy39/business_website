@@ -20,9 +20,10 @@ export const Header = () => {
 
   const navigation = [
     { name: 'Home', href: '/' },
+    { name: 'Our Team', href: '/our-team' },
     { name: 'About', href: '/about' },
     { name: 'Services', href: '/services' },
-    { name: 'Gallery', href: '/gallery' },   // <-- Add this line
+    { name: 'Gallery', href: '/gallery' },   
     { name: 'Contact', href: '/contact' },
   ];
 
