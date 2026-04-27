@@ -20,10 +20,10 @@ export const Header = () => {
 
   const navigation = [
     { name: 'Home', href: '/' },
+    { name: 'About Us', href: '/about' },
     { name: 'Our Team', href: '/our-team' },
-    { name: 'About', href: '/about' },
     { name: 'Services', href: '/services' },
-    { name: 'Gallery', href: '/gallery' },   
+    { name: 'Gallery', href: '/gallery' },
     { name: 'Contact', href: '/contact' },
   ];
 
@@ -34,20 +34,20 @@ export const Header = () => {
       {/* Top Info Bar */}
       <div className="bg-primary text-primary-foreground py-2 text-sm">
         <div className="container mx-auto px-4">
-          <div className="flex flex-wrap justify-between items-center gap-2">
-            <div className="flex items-center gap-4">
+          <div className="flex flex-col sm:flex-row justify-center sm:justify-between items-center gap-2 text-xs sm:text-sm text-center sm:text-left">
+            <div className="flex flex-wrap justify-center sm:justify-start items-center gap-2 sm:gap-4">
               <div className="flex items-center gap-1">
-                <Clock className="w-4 h-4" />
+                <Clock className="w-3 h-3 sm:w-4 sm:h-4" />
                 <span>Mon-Sat: 9AM-9PM</span>
               </div>
               <div className="flex items-center gap-1">
-                <MapPin className="w-4 h-4" />
+                <MapPin className="w-3 h-3 sm:w-4 sm:h-4" />
                 <span>Gotri & Vasna, Vadodara</span>
               </div>
             </div>
             <div className="flex items-center gap-4">
-              <a href="tel:9724385791" className="flex items-center gap-1 hover:text-secondary transition-colors">
-                <Phone className="w-4 h-4" />
+              <a href="tel:9724385791" className="flex items-center gap-1 hover:text-secondary transition-colors font-medium">
+                <Phone className="w-3 h-3 sm:w-4 sm:h-4" />
                 <span>97243 85791</span>
               </a>
             </div>
@@ -61,16 +61,16 @@ export const Header = () => {
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             {/* Logo */}
-            <Link to="/" className="flex items-center space-x-3">
+            <Link to="/" className="flex items-center space-x-2 sm:space-x-3 max-w-[75%] sm:max-w-none">
               <img
                 src="/logo.jpg"
                 alt="Dev Physiotherapy Logo"
-                className="w-12 h-12 rounded-full object-cover border-2 border-primary shadow"
+                className="w-10 h-10 sm:w-12 sm:h-12 rounded-full object-cover border-2 border-primary shadow shrink-0"
                 draggable={false}
               />
-              <div>
-                <h1 className="text-xl font-bold text-primary">Dev Physiotherapy</h1>
-                <p className="text-sm text-gray-600">& Healthcare Center</p>
+              <div className="min-w-0">
+                <h1 className="text-base sm:text-xl font-bold text-primary truncate">Dev Physiotherapy</h1>
+                <p className="text-[10px] sm:text-sm text-gray-600 truncate">& Healthcare Center</p>
               </div>
             </Link>
 
@@ -132,19 +132,19 @@ export const Header = () => {
                   {item.name}
                 </Link>
               ))}
-              <div className="pt-4 space-y-2">
+              <div className="pt-4 flex flex-col gap-3">
                 <Button
                   asChild
                   variant="outline"
-                  size="sm"
-                  className="border-primary text-primary hover:bg-primary hover:text-white"
+                  className="w-full border-primary text-primary hover:bg-primary hover:text-white"
                 >
                   <Link to="/contact">Home Visit Available</Link>
                 </Button>
                 <Button
+                  asChild
                   className="w-full bg-accent hover:bg-accent/90 text-white"
                 >
-                  Book Appointment
+                  <Link to="/contact">Book Appointment</Link>
                 </Button>
               </div>
             </div>

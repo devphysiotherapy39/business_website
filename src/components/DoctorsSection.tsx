@@ -1,6 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Phone, Award, GraduationCap } from "lucide-react";
+import { Phone, Award, GraduationCap, ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export const DoctorsSection = () => {
   return (
@@ -176,45 +177,16 @@ export const DoctorsSection = () => {
           </Card>
         </div>
 
-        {/* Additional Info */}
-        <div className="mt-16 bg-gradient-to-r from-primary/5 to-secondary/5 rounded-2xl p-8 animate-fade-in-up animation-delay-400">
-          <div className="text-center">
-            <h3 className="text-2xl font-bold text-primary mb-4">
-              Why Choose Our Doctors?
-            </h3>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <div className="flex flex-col items-center">
-                <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center text-white text-2xl mb-3">
-                  🏆
-                </div>
-                <h4 className="font-semibold text-primary mb-2">Certified Experts</h4>
-                <p className="text-sm text-gray-600 text-center">
-                  Highly qualified professionals with multiple certifications
-                </p>
-              </div>
-
-              <div className="flex flex-col items-center">
-                <div className="w-16 h-16 bg-secondary rounded-full flex items-center justify-center text-white text-2xl mb-3">
-                  🎯
-                </div>
-                <h4 className="font-semibold text-primary mb-2">Specialized Care</h4>
-                <p className="text-sm text-gray-600 text-center">
-                  Focused expertise in neurophysiotherapy and ayurvedic medicine
-                </p>
-              </div>
-
-              <div className="flex flex-col items-center">
-                <div className="w-16 h-16 bg-accent rounded-full flex items-center justify-center text-white text-2xl mb-3">
-                  ❤️
-                </div>
-                <h4 className="font-semibold text-primary mb-2">Patient-Centered</h4>
-                <p className="text-sm text-gray-600 text-center">
-                  Personalized treatment plans for optimal recovery
-                </p>
-              </div>
-            </div>
-          </div>
+        {/* View All Team Button */}
+        <div className="mt-12 text-center animate-fade-in-up">
+          <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-white rounded-full px-8 py-6 text-lg font-semibold shadow-premium hover:shadow-2xl transition-all duration-300 group">
+            <Link to="/our-team" className="flex items-center">
+              Meet Our Entire Team
+              <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+            </Link>
+          </Button>
         </div>
+
       </div>
     </section>
   );

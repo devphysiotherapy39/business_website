@@ -85,6 +85,8 @@
   body {
     @apply bg-background text-foreground font-inter;
     font-feature-settings: "rlig" 1, "calt" 1;
+    overflow-x: hidden;
+    overscroll-behavior-x: none;
   }
 
   h1,
@@ -181,9 +183,10 @@
   }
 }
 
-/* Smooth scroll behavior */
+/* Smooth scroll behavior and Layout lock */
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 /* Loading spinner */

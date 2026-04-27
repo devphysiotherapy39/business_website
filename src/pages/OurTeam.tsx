@@ -252,125 +252,6 @@ const OurTeam = () => {
         </div>
       </section>
 
-      {/* Our Unique Treatment Approach */}
-      <section className="section-padding bg-gradient-to-br from-primary/5 to-secondary/5">
-        <div className="container mx-auto px-4 max-w-5xl">
-          
-          <div className="text-center mb-16 animate-fade-in-up">
-            <h2 className="text-3xl md:text-5xl font-bold text-primary mb-6 flex items-center justify-center gap-3">
-              <span className="text-yellow-500">🌟</span> OUR UNIQUE TREATMENT APPROACH
-            </h2>
-            <div className="w-32 h-1 bg-secondary mx-auto rounded-full mb-8"></div>
-            <div className="bg-white p-8 md:p-10 rounded-2xl shadow-soft text-left border border-gray-100">
-              <p className="text-gray-700 leading-relaxed mb-6 text-lg md:text-xl">
-                At Dev Physiotherapy & Healthcare Center, we believe that the human body works as an interconnected system through neurological pathways and movement chains. <strong className="text-primary">Pain in one area is often linked to dysfunction in another part of the body.</strong>
-              </p>
-              <p className="text-gray-700 leading-relaxed text-lg md:text-xl">
-                Under the guidance and leadership of Dr. Hitesh D. Prajapati, we follow a specialized chain-based assessment and treatment approach, developed through extensive clinical experience and research on 15,000+ patients.
-              </p>
-            </div>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-12 items-start mb-16">
-            <div className="space-y-8 animate-fade-in-up" style={{ animationDelay: '100ms' }}>
-              <div>
-                <h3 className="text-2xl font-bold text-primary mb-6 flex items-center gap-2">
-                  <span>🔬</span> What Makes Our Approach Different?
-                </h3>
-                <ul className="space-y-4">
-                  {[
-                    "Detailed assessment beyond the painful area",
-                    "Identification of interconnected body segments (muscle & nerve chains)",
-                    "Prediction of future problem areas",
-                    "Complete whole-body treatment planning",
-                    "Focus on root cause treatment with long-term recovery, not temporary relief"
-                  ].map((item, idx) => (
-                    <li key={idx} className="flex items-start gap-3 bg-white p-4 rounded-xl shadow-sm border border-gray-50">
-                      <span className="text-secondary mt-0.5">✔</span>
-                      <span className="text-gray-700 font-medium">{item}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-
-              <div className="bg-primary/5 p-6 rounded-xl border-l-4 border-primary space-y-4 mt-8">
-                <p className="text-gray-800 font-medium flex items-start gap-3">
-                  <span className="text-secondary text-xl">👉</span> We don't just treat where it hurts — we treat why it hurts.
-                </p>
-                <p className="text-gray-800 font-medium flex items-start gap-3">
-                  <span className="text-secondary text-xl">👉</span> This method allows us to treat the actual source of the problem, ensuring better and lasting results.
-                </p>
-                <p className="text-gray-800 font-medium flex items-start gap-3">
-                  <span className="text-secondary text-xl">👉</span> These techniques are continuously refined by Dr. Hitesh Prajapati through years of hands-on clinical practice and patient outcomes.
-                </p>
-              </div>
-            </div>
-
-            <div className="space-y-6 animate-fade-in-up" style={{ animationDelay: '200ms' }}>
-
-              <div className="w-full rounded-2xl overflow-hidden shadow-premium border border-gray-100 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 my-6">
-                <img src="/poster.jpeg" alt="Why Full Body Treatment Approach" className="w-full h-auto object-cover" />
-              </div>
-
-              <Card className="border-0 shadow-soft hover:shadow-premium transition-shadow">
-                <CardContent className="p-6">
-                  <h3 className="text-lg font-bold text-primary mb-4 flex items-center gap-2">
-                    <span>🏠</span> Consistent Quality – Clinic & Home Visit
-                  </h3>
-                  <p className="text-gray-600 mb-4">We ensure the same high standard of care and advanced treatment at:</p>
-                  <ul className="space-y-2 mb-4">
-                    <li className="flex items-start gap-2 text-gray-700">
-                      <span className="text-secondary">✔</span> <strong>In-Clinic Sessions</strong> (Structured Therapy)
-                    </li>
-                    <li className="flex items-start gap-2 text-gray-700">
-                      <span className="text-secondary">✔</span> <strong>Home Visit Services</strong> (One-to-One Care)
-                    </li>
-                  </ul>
-                  <p className="text-primary font-semibold flex items-center gap-2 bg-primary/5 p-3 rounded-lg text-sm">
-                    <span className="text-secondary">👉</span> Delivering convenience without compromising quality.
-                  </p>
-                </CardContent>
-              </Card>
-            </div>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-8 animate-fade-in-up" style={{ animationDelay: '300ms' }}>
-            <Card className="border-0 shadow-soft hover:shadow-premium transition-shadow bg-primary text-white overflow-hidden relative">
-              <div className="absolute top-0 right-0 w-64 h-64 bg-white opacity-5 rounded-full -translate-y-1/2 translate-x-1/2 blur-2xl"></div>
-              <CardContent className="p-8 h-full flex flex-col justify-center relative z-10">
-                <h3 className="text-2xl font-bold mb-6 flex items-center gap-3">
-                  <span>🎯</span> OUR TREATMENT GOAL
-                </h3>
-                <ul className="space-y-4">
-                  {[
-                    "Eliminate pain from the root cause",
-                    "Restore full-body function",
-                    "Prevent recurrence of the condition",
-                    "Provide long-term, sustainable recovery"
-                  ].map((item, idx) => (
-                    <li key={idx} className="flex items-center gap-3 font-medium bg-white/10 p-3 rounded-lg backdrop-blur-sm">
-                      <div className="w-2 h-2 rounded-full bg-secondary"></div>
-                      {item}
-                    </li>
-                  ))}
-                </ul>
-              </CardContent>
-            </Card>
-
-            <div className="bg-white p-8 rounded-3xl text-center shadow-soft flex flex-col justify-center border-4 border-gray-50">
-              <h2 className="text-3xl font-bold text-primary mb-6 flex items-center justify-center gap-3">
-                <span>💬</span> Our Promise
-              </h2>
-              <p className="text-2xl font-medium leading-relaxed text-gray-700 italic">
-                "We don't just treat the pain — <br/>
-                <span className="text-secondary font-bold inline-block mt-4 not-italic">We understand the chain behind it and treat the cause.</span>"
-              </p>
-            </div>
-          </div>
-
-        </div>
-      </section>
-
       {/* Team Members Section */}
       <section className="section-padding bg-slate-50">
         <div className="container mx-auto px-4">
@@ -496,6 +377,125 @@ const OurTeam = () => {
               </Card>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Our Unique Treatment Approach */}
+      <section className="section-padding bg-gradient-to-br from-primary/5 to-secondary/5">
+        <div className="container mx-auto px-4 max-w-5xl">
+          
+          <div className="text-center mb-16 animate-fade-in-up">
+            <h2 className="text-3xl md:text-5xl font-bold text-primary mb-6 flex items-center justify-center gap-3">
+              <span className="text-yellow-500">🌟</span> OUR UNIQUE TREATMENT APPROACH
+            </h2>
+            <div className="w-32 h-1 bg-secondary mx-auto rounded-full mb-8"></div>
+            <div className="bg-white p-8 md:p-10 rounded-2xl shadow-soft text-left border border-gray-100">
+              <p className="text-gray-700 leading-relaxed mb-6 text-lg md:text-xl">
+                At Dev Physiotherapy & Healthcare Center, we believe that the human body works as an interconnected system through neurological pathways and movement chains. <strong className="text-primary">Pain in one area is often linked to dysfunction in another part of the body.</strong>
+              </p>
+              <p className="text-gray-700 leading-relaxed text-lg md:text-xl">
+                Under the guidance and leadership of Dr. Hitesh D. Prajapati, we follow a specialized chain-based assessment and treatment approach, developed through extensive clinical experience and research on 15,000+ patients.
+              </p>
+            </div>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-12 items-start mb-16">
+            <div className="space-y-8 animate-fade-in-up" style={{ animationDelay: '100ms' }}>
+              <div>
+                <h3 className="text-2xl font-bold text-primary mb-6 flex items-center gap-2">
+                  <span>🔬</span> What Makes Our Approach Different?
+                </h3>
+                <ul className="space-y-4">
+                  {[
+                    "Detailed assessment beyond the painful area",
+                    "Identification of interconnected body segments (muscle & nerve chains)",
+                    "Prediction of future problem areas",
+                    "Complete whole-body treatment planning",
+                    "Focus on root cause treatment with long-term recovery, not temporary relief"
+                  ].map((item, idx) => (
+                    <li key={idx} className="flex items-start gap-3 bg-white p-4 rounded-xl shadow-sm border border-gray-50">
+                      <span className="text-secondary mt-0.5">✔</span>
+                      <span className="text-gray-700 font-medium">{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              <div className="bg-primary/5 p-6 rounded-xl border-l-4 border-primary space-y-4 mt-8">
+                <p className="text-gray-800 font-medium flex items-start gap-3">
+                  <span className="text-secondary text-xl">👉</span> We don't just treat where it hurts — we treat why it hurts.
+                </p>
+                <p className="text-gray-800 font-medium flex items-start gap-3">
+                  <span className="text-secondary text-xl">👉</span> This method allows us to treat the actual source of the problem, ensuring better and lasting results.
+                </p>
+                <p className="text-gray-800 font-medium flex items-start gap-3">
+                  <span className="text-secondary text-xl">👉</span> These techniques are continuously refined by Dr. Hitesh Prajapati through years of hands-on clinical practice and patient outcomes.
+                </p>
+              </div>
+            </div>
+
+            <div className="space-y-6 animate-fade-in-up" style={{ animationDelay: '200ms' }}>
+
+              <div className="w-full rounded-2xl overflow-hidden shadow-premium border border-gray-100 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 my-6">
+                <img src="/poster.jpeg" alt="Why Full Body Treatment Approach" className="w-full h-auto object-cover" />
+              </div>
+
+              <Card className="border-0 shadow-soft hover:shadow-premium transition-shadow">
+                <CardContent className="p-6">
+                  <h3 className="text-lg font-bold text-primary mb-4 flex items-center gap-2">
+                    <span>🏠</span> Consistent Quality – Clinic & Home Visit
+                  </h3>
+                  <p className="text-gray-600 mb-4">We ensure the same high standard of care and advanced treatment at:</p>
+                  <ul className="space-y-2 mb-4">
+                    <li className="flex items-start gap-2 text-gray-700">
+                      <span className="text-secondary">✔</span> <strong>In-Clinic Sessions</strong> (Structured Therapy)
+                    </li>
+                    <li className="flex items-start gap-2 text-gray-700">
+                      <span className="text-secondary">✔</span> <strong>Home Visit Services</strong> (One-to-One Care)
+                    </li>
+                  </ul>
+                  <p className="text-primary font-semibold flex items-center gap-2 bg-primary/5 p-3 rounded-lg text-sm">
+                    <span className="text-secondary">👉</span> Delivering convenience without compromising quality.
+                  </p>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8 animate-fade-in-up" style={{ animationDelay: '300ms' }}>
+            <Card className="border-0 shadow-soft hover:shadow-premium transition-shadow bg-primary text-white overflow-hidden relative">
+              <div className="absolute top-0 right-0 w-64 h-64 bg-white opacity-5 rounded-full -translate-y-1/2 translate-x-1/2 blur-2xl"></div>
+              <CardContent className="p-8 h-full flex flex-col justify-center relative z-10">
+                <h3 className="text-2xl font-bold mb-6 flex items-center gap-3">
+                  <span>🎯</span> OUR TREATMENT GOAL
+                </h3>
+                <ul className="space-y-4">
+                  {[
+                    "Eliminate pain from the root cause",
+                    "Restore full-body function",
+                    "Prevent recurrence of the condition",
+                    "Provide long-term, sustainable recovery"
+                  ].map((item, idx) => (
+                    <li key={idx} className="flex items-center gap-3 font-medium bg-white/10 p-3 rounded-lg backdrop-blur-sm">
+                      <div className="w-2 h-2 rounded-full bg-secondary"></div>
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </CardContent>
+            </Card>
+
+            <div className="bg-white p-8 rounded-3xl text-center shadow-soft flex flex-col justify-center border-4 border-gray-50">
+              <h2 className="text-3xl font-bold text-primary mb-6 flex items-center justify-center gap-3">
+                <span>💬</span> Our Promise
+              </h2>
+              <p className="text-2xl font-medium leading-relaxed text-gray-700 italic">
+                "We don't just treat the pain — <br/>
+                <span className="text-secondary font-bold inline-block mt-4 not-italic">We understand the chain behind it and treat the cause.</span>"
+              </p>
+            </div>
+          </div>
+
         </div>
       </section>
 
