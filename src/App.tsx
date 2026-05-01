@@ -11,6 +11,7 @@ import Services from "./pages/Services";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 import { FloatingWhatsAppButton } from "./components/FloatingWhatsAppButton";
+import { ScrollToTop } from "./components/ScrollToTop";
 import OurTeam from "./pages/OurTeam";
 
 const queryClient = new QueryClient();
@@ -21,6 +22,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
+        <ScrollToTop />
         <div className="min-h-screen bg-background">
           <Routes>
             <Route path="/" element={<Index />} />

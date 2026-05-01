@@ -47,9 +47,12 @@ export const DoctorsSection = () => {
                   className="w-32 h-32 object-cover object-top bg-gradient-primary rounded-full flex items-center justify-center text-white text-4xl font-bold mb-6 shadow-lg"
                 />
 
-                <h3 className="text-2xl font-bold text-primary mb-2">
+                <h3 className="text-2xl font-bold text-primary mb-1">
                   Dr. Hitesh D. Prajapati
                 </h3>
+                <h4 className="text-xl font-bold text-[#F5B544] mb-2 tracking-wide drop-shadow-sm">
+                  Founder & CEO
+                </h4>
 
                 <div className="bg-primary/10 px-4 py-2 rounded-full mb-4">
                   <p className="text-primary font-semibold">MPT (Neuro), BPT, MIAP, GSCPT
@@ -68,6 +71,11 @@ export const DoctorsSection = () => {
                   <div className="flex items-center justify-center gap-2 text-gray-700">
                     <Award className="w-4 h-4" />
                     <span className="text-sm">Chiropractor</span>
+                  </div>
+                  <div className="flex items-center justify-center gap-2 pt-2">
+                    <span className="text-xl -mt-1">📍</span>
+                    <span className="text-[#F5B544] font-bold text-lg">Experience:</span>
+                    <span className="text-primary font-bold text-lg">16+ Years</span>
                   </div>
                 </div>
 
@@ -126,9 +134,12 @@ export const DoctorsSection = () => {
                   className="w-32 h-32 object-cover object-top bg-gradient-to-r from-orange-500 to-orange-600 rounded-full flex items-center justify-center text-white text-4xl font-bold mb-6 shadow-lg"
                 />
 
-                <h3 className="text-2xl font-bold text-primary mb-2">
+                <h3 className="text-2xl font-bold text-primary mb-1">
                   Dr. Bhumika H. Prajapati
                 </h3>
+                <h4 className="text-xl font-bold text-[#F5B544] mb-2 tracking-wide drop-shadow-sm">
+                  Co-Chairperson
+                </h4>
 
                 <div className="bg-orange-100 px-4 py-2 rounded-full mb-4">
                   <p className="text-orange-600 font-semibold">BAMS, CCDE</p>
@@ -142,6 +153,11 @@ export const DoctorsSection = () => {
                   <div className="flex items-center justify-center gap-2 text-gray-700">
                     <Award className="w-4 h-4" />
                     <span className="text-sm">Ayush Premium Certified</span>
+                  </div>
+                  <div className="flex items-center justify-center gap-2 pt-2">
+                    <span className="text-xl -mt-1">📍</span>
+                    <span className="text-[#F5B544] font-bold text-lg">Experience:</span>
+                    <span className="text-primary font-bold text-lg">16+ Years</span>
                   </div>
                 </div>
 

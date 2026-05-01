@@ -8,15 +8,16 @@ export const NotificationSection = () => {
                 Latest Updates
             </span>
             <div className="overflow-hidden flex-1">
-                <span className="block whitespace-nowrap animate-marquee text-white font-medium text-base md:text-lg">
-                    Dev Physiotherapy & Healthcare Center - Vadodara | Brain & Spine Specialist | Chiropractor on
+                <span className="block whitespace-nowrap animate-marquee text-white font-medium text-base md:text-lg flex items-center">
+                    <span className="text-yellow-300 font-bold italic mr-3">“Smart people don’t chase relief - they fix the cause.”</span>
+                    <span className="opacity-90 hidden md:inline">• Dev Physiotherapy & Healthcare Center - Vadodara</span>
                     <a
                         href="https://share.google/4cLBFAYDICHhcs9QJ"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="ml-4 underline text-yellow-200 hover:text-yellow-300 transition-colors"
+                        className="ml-4 bg-white text-primary px-4 py-1 rounded-full text-sm font-bold hover:bg-yellow-100 transition-colors shadow-sm"
                     >
-                        Click here for more information
+                        Read More
                     </a>
                 </span>
             </div>
