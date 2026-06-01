@@ -134,6 +134,24 @@ const OurTeam = () => {
     },
     {
       id: 5,
+      name: "Dr. Divya Pratap Singh",
+      role: "Clinical Physiotherapist",
+      image: "/DivyaPratapSingh.jpeg",
+      details: {
+        qualifications: "B.P.T.",
+        experience: "Joined: April 2026",
+        about: "Dr. Divya Pratap Singh completed his Bachelor of Physiotherapy (B.P.T.) from Sumandeep Vidyapeeth University. He is a dedicated physiotherapist with a strong interest in patient-centered rehabilitation and functional recovery.",
+        expertise: [
+          "Musculoskeletal Rehabilitation",
+          "Sports Injury Rehabilitation",
+          "Exercise Therapy",
+          "Pain Management",
+          "Functional Recovery Programs"
+        ]
+      }
+    },
+    {
+      id: 6,
       name: "Dr. Dhvani Patel",
       role: "Clinical Physiotherapist",
       image: "/dhvanipatel.jpeg",
@@ -153,7 +171,7 @@ const OurTeam = () => {
       }
     },
     {
-      id: 6,
+      id: 7,
       name: "Dr. Rina Sharma",
       role: "Clinical Physiotherapist",
       image: "/rinasharma.jpeg",

@@ -26,15 +26,15 @@ const Gallery = () => {
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {/* Video 1 */}
-              <div className="aspect-w-16 aspect-h-9 bg-gray-200 rounded-lg overflow-hidden flex items-center justify-center shadow-lg">
-                <video loop autoPlay muted className="w-full h-full object-cover">
+              <div className="aspect-video bg-gray-200 rounded-lg overflow-hidden flex items-center justify-center shadow-lg">
+                <video loop autoPlay muted playsInline className="w-full h-full object-cover">
                   <source src="/video%201.mp4" type="video/mp4" />
                   Your browser does not support the video tag.
                 </video>
               </div>
               {/* Video 2 */}
-              <div className="aspect-w-16 aspect-h-9 bg-gray-200 rounded-lg overflow-hidden flex items-center justify-center shadow-lg">
-                <video loop autoPlay muted className="w-full h-full object-cover">
+              <div className="aspect-video bg-gray-200 rounded-lg overflow-hidden flex items-center justify-center shadow-lg">
+                <video loop autoPlay muted playsInline className="w-full h-full object-cover">
                   <source src="/video%202.mp4" type="video/mp4" />
                   Your browser does not support the video tag.
                 </video>
@@ -51,26 +51,26 @@ const Gallery = () => {
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {/* Recovery Image 1 */}
-              <div className="aspect-w-16 aspect-h-9 bg-gray-100 rounded-lg overflow-hidden shadow-lg">
+              <div className="aspect-video bg-gray-100 rounded-lg overflow-hidden shadow-lg">
                 <img src="/recovery%201.jpg" alt="Patient Recovery 1" className="w-full h-full object-cover" />
               </div>
 
               {/* Recovery Image 2 */}
-              {/* <div className="aspect-w-16 aspect-h-9 bg-gray-100 rounded-lg overflow-hidden shadow-lg">
+              {/* <div className="aspect-video bg-gray-100 rounded-lg overflow-hidden shadow-lg">
                 <img src="/recovery%202.jpg" alt="Patient Recovery 2" className="w-full h-full object-cover" />
               </div> */}
 
               {/* Recovery Image 3 */}
-              <div className="aspect-w-16 aspect-h-9 bg-gray-100 rounded-lg overflow-hidden shadow-lg">
+              <div className="aspect-video bg-gray-100 rounded-lg overflow-hidden shadow-lg">
                 <img src="/recovery%203.jpg" alt="Patient Recovery 3" className="w-full h-full object-cover" />
               </div>
-               <div className="aspect-w-16 aspect-h-9 bg-gray-100 rounded-lg overflow-hidden shadow-lg">
+               <div className="aspect-video bg-gray-100 rounded-lg overflow-hidden shadow-lg">
                 <img src="/Recovery.jpeg" alt="Patient Recovery 3" className="w-full h-full object-cover" />
               </div>
-               <div className="aspect-w-16 aspect-h-9 bg-gray-100 rounded-lg overflow-hidden shadow-lg">
+               <div className="aspect-video bg-gray-100 rounded-lg overflow-hidden shadow-lg">
                 <img src="/Recovery2.jpeg" alt="Patient Recovery 3" className="w-full h-full object-cover" />
               </div>
-               <div className="aspect-w-16 aspect-h-9 bg-gray-100 rounded-lg overflow-hidden shadow-lg">
+               <div className="aspect-video bg-gray-100 rounded-lg overflow-hidden shadow-lg">
                 <img src="/Recovery3.jpeg" alt="Patient Recovery 3" className="w-full h-full object-cover" />
               </div>
             </div>
@@ -82,16 +82,20 @@ const Gallery = () => {
               Clinic Images
             </h3>
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6 mx-auto">
+              {/* Clinic Image 5 */}
+              <div className="aspect-video bg-gray-100 rounded-lg overflow-hidden shadow">
+                <img src="/clinic5.jpeg" alt="Clinic 5" className="w-full h-full object-contain" />
+              </div>
               {/* Clinic Image 2 */}
-              <div className="aspect-w-16 aspect-h-9 bg-gray-100 rounded-lg overflow-hidden shadow">
+              <div className="aspect-video bg-gray-100 rounded-lg overflow-hidden shadow">
                 <img src="/clinic%202.jpg" alt="Clinic 2" className="w-full h-full object-cover" />
               </div>
               {/* Clinic Image 3 */}
-              <div className="aspect-w-16 aspect-h-9 bg-gray-100 rounded-lg overflow-hidden shadow">
+              <div className="aspect-video bg-gray-100 rounded-lg overflow-hidden shadow">
                 <img src="/clinic%203.jpg" alt="Clinic 3" className="w-full h-full object-cover" />
               </div>
               {/* Clinic Image 4 */}
-              <div className="aspect-w-16 aspect-h-9 bg-gray-100 rounded-lg overflow-hidden shadow">
+              <div className="aspect-video bg-gray-100 rounded-lg overflow-hidden shadow">
                 <img src="/clinic%204.jpg" alt="Clinic 4" className="w-full h-full object-cover" />
               </div>
             </div>
@@ -104,8 +108,22 @@ const Gallery = () => {
             </h3>
             <div className="columns-2 md:columns-3 gap-6">
 
-              <div className="aspect-w-16 aspect-h-9 bg-gray-200 rounded-lg overflow-hidden flex items-center justify-center shadow-lg">
-                <video loop autoPlay muted className="w-full h-full object-cover">
+              <div className="aspect-video bg-gray-200 rounded-lg overflow-hidden flex items-center justify-center shadow-lg mb-6 break-inside-avoid">
+                <video loop autoPlay playsInline controls className="w-full h-full object-cover">
+                  <source src="/Video.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+
+              <div className="aspect-video bg-gray-200 rounded-lg overflow-hidden flex items-center justify-center shadow-lg mb-6 break-inside-avoid">
+                <video loop autoPlay playsInline controls className="w-full h-full object-cover">
+                  <source src="/videoo1.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+
+              <div className="aspect-video bg-gray-200 rounded-lg overflow-hidden flex items-center justify-center shadow-lg mb-6 break-inside-avoid">
+                <video loop autoPlay playsInline controls className="w-full h-full object-cover">
                   <source src="/Video1.mp4" type="video/mp4" />
                   Your browser does not support the video tag.
                 </video>
@@ -178,15 +196,15 @@ const Gallery = () => {
             </h3>
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6 mx-auto">
               {/* Surgical Image 2 */}
-              <div className="aspect-w-16 aspect-h-9 bg-gray-100 rounded-lg overflow-hidden shadow">
+              <div className="aspect-video bg-gray-100 rounded-lg overflow-hidden shadow">
                 <img src="/assets/surgical/adult_diapers.jpeg" alt="Surgical 2" className="w-full h-full object-cover" />
               </div>
               {/* Surgical Image 3 */}
-              <div className="aspect-w-16 aspect-h-9 bg-gray-100 rounded-lg overflow-hidden shadow">
+              <div className="aspect-video bg-gray-100 rounded-lg overflow-hidden shadow">
                 <img src="/assets/surgical/knee_caps.jpeg" alt="Surgical 3" className="w-full h-full object-cover" />
               </div>
               {/* Surgical Image 4 */}
-              <div className="aspect-w-16 aspect-h-9 bg-gray-100 rounded-lg overflow-hidden shadow">
+              <div className="aspect-video bg-gray-100 rounded-lg overflow-hidden shadow">
                 <img src="/assets/surgical/rent_services.jpeg" alt="Surgical 4" className="w-full h-full object-cover" />
               </div>
               {/* Poster 3 */}
@@ -203,3 +221,5 @@ const Gallery = () => {
 };
 
 export default Gallery;
+
+

@@ -49,7 +49,24 @@ const Services = () => {
       title: "Other Services",
       description: "Other services offered by the clinic",
       image: "/assets/services/Other Services.png",
-      features: ["Geriatric Physiotherapy", "Paediatric Physiotherapy", "MFR- Myofascial Release", "Acupressure", "Acupuncture", "Sensory Stimulation", "Shock wave Therapy", "Mackenzie/Pilates", "Neurodevelopmental Therapy", "PNF-Proprioceptive Neuromuscular Facilitation", "Aerobics"]
+      features: [
+        "Geriatric Physiotherapy",
+        "Paediatric Physiotherapy",
+        "Women’s Health & Pelvic Floor Rehabilitation",
+        "Urinary Incontinence Rehabilitation",
+        "MFR – Myofascial Release",
+        "Acupressure",
+        "Acupuncture",
+        "Sensory Stimulation",
+        "Shockwave Therapy",
+        "McKenzie Therapy / Pilates",
+        "Neurodevelopmental Therapy (NDT)",
+        "PNF – Proprioceptive Neuromuscular Facilitation",
+        "Sports Rehabilitation",
+        "Dry Needling",
+        "Kinesio Taping",
+        "Aerobics & Fitness Rehabilitation"
+      ]
     },
 
    {
