@@ -81,7 +81,7 @@ const Gallery = () => {
             <h3 className="text-2xl font-bold text-primary mb-6 text-center animate-fade-in-up">
               Clinic Images
             </h3>
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6 mx-auto">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6 mx-auto">
               {/* Clinic Image 5 */}
               <div className="aspect-video bg-gray-100 rounded-lg overflow-hidden shadow">
                 <img src="/clinic5.jpeg" alt="Clinic 5" className="w-full h-full object-contain" />
